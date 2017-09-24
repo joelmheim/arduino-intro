@@ -33,98 +33,233 @@
         </section>
 
         <section>
-          <h2>Who are we?</h2>
-          <p style="text-align: left; margin-left: 180px">
-            Thorvald Johannesen, SI Bergen
-          </p>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-          <br/><br/>
-          <img src="images/" height="200px" />
+          <section>
+            <h2>Hva er en Arduino?</h2>
+            <img src="images/arduino.jpg" height="200px" />
+          </section>
+
+          <section>
+            <img src="images/opensourcehw.png" height="200px" style="float-left"/>
+            <h3>Arduino</h3>
+            <ul>
+              <li>Open source hardware</li>
+              <li>Microcontroller</li>
+              <li>Arduino Programming Language</li>
+            </ul>
+          </section>
+
+          <section data-background="images/arduino_schematic.png">
+            <h2 style="color:black" >Kan vi forstå hvordan dette virker???</h2>
+          </section>
         </section>
 
         <section>
-          <h2>Who are we?</h2>
-          <p style="text-align: left; margin-left: 180px">
-            Jørn Ølmheim, SUB Well Planning and Integrity
-          </p>
-          <ul>
-            <li>Close to 20 years experience</li>
-            <li>Software craftsman</li>
-            <li>Polyglot programmer</li>
-            <li>Leading Advisor, Corporate IT</li>
-          </ul>
-          <br/><br/>
-          <img src="images/joe_avatar.jpg" height="200px" />
+          <section>
+            <h2>Elektronikk innføring</h2>
+            <ul>
+              <li>Komponenter</li>
+              <li>Kretssymboler</li>
+              <li>Enkle kretser</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Motstand / Resistor</h2>
+            <img src="images/motstand.jpg" height="100px" style="float:right"/>
+            <img src="images/resistor_symbols.jpg"/>
+          </section>
+
+          <section>
+            <h2 style="float:left">Motstand</h2>
+            <img style="float:right" src="images/resistor_symbols.png" width="500px"/>
+            <br/><br/><br/>
+            <p style="float:left">Enhet: Ohm (&Omega;)</p>
+            <br/><br/>
+            <table width="100%">
+              <tr>
+                <td>Ohms lov</td>
+                <td>Effect</td>
+              </tr>
+              <tr>
+                <td>\begin{align}U = I\cdot R \end{align}</td>
+                <td>\begin{align}P = U \cdot I \end{align}</td>
+              </tr>
+              <tr>
+                <td>\begin{align}I = \frac{U}{R}\end{align}</td>
+                <td>\begin{align}= \frac{U^{2}}{R}\end{align}</td>
+              </tr>
+              <tr>
+                <td>\begin{align}R = \frac{U}{I}\end{align}</td>
+                <td>\begin{align} = I^{2} \cdot R \end{align}</td>
+              </tr>
+            </table>
+          </section>
+
+          <section>
+            <h3>Spenningsdeler</h3>
+            <img src="images/voltage_divider.png" style="float:left" />
+            <br/><br/>
+            <div>
+              \( V_{out} = V_{in} \cdot \frac{R_{2}}{R_{1} + R_{2}}\)</td>
+            </div>
+            <br/>
+            <div style="font-size: 20px">
+              <p style="text-decoration: underline">Example:</p>
+              <p>\( V_{in} = 10 V \)</p>
+              <p>\( R_{1} = 250 \Omega \)</p>
+              <p>\( R_{2} = 750 \Omega \)</p>
+              <p>\( V_{out} = 10*250/(250+750) = 2.5 V \)</p>
+            </div>
+            <br/>
+            <p style="font-size: 14px">https://learn.sparkfun.com/tutorials/resistors/example-application</p>
+          </section>
+
+          <section>
+            <h2>Potensiometer</h2>
+            <img src="images/potentiometer_symbols.png" height="200px" />
+            <img src="images/potentiometer_internals.jpg" height="200px" />
+            <img src="images/potentiometer.jpg" height="200px" />
+          </section>
+
+          <section>
+            <h2>Strømbegrensende motstand</h2>
+            <img src="images/current_limiter.png"  height="500px" />
+            <br/>
+            <p style="font-size: 14px">https://www.sparkfun.com/tutorials/219</p>
+          </section>
+
+          <section>
+            <h2>Pull-up motstand</h2>
+            <img src="images/pull-up_resistor.jpg" height="500px" />
+            <br/>
+            <p style="font-size: 14px">https://learn.sparkfun.com/tutorials/resistors/example-application</p>
+          </section>
+
+          <section>
+            <h2>Pull-down motstand</h2>
+            <div style="background-color:#e6e6e6">
+              <img src="images/pull-down_resistor.png" height="400px" />
+            </div>
+          </section>
+
+          <section>
+            <h2>Diode</h2>
+            <img src="images/diode.jpg" width="450px" />
+            <img src="images/diode_symbols.jpg" height="250px" />
+            <p>Leder strøm i bare en retning</p>
+            <p>Sperrer i den andre retningen</p>
+          </section>
+
+          <section>
+            <h2>Types of diodes</h2>
+            <img src="images/diode_types.jpg" width="700px" />
+          </section>
+
+          <section>
+            <h2>Dioder - anvendelser</h2>
+            <div style="float:left">
+              <ul>
+                <li>Likeretting</li>
+                <li>Polaritetsbeskyttelse</li>
+                <li>Spenningsregulering</li>
+                <li>Overspenningsbeskyttelse</li>
+                <li>Demodulering av AM signaler</li>
+              </ul>
+            </div>
+            <img style="float:right" src="images/diode-rectifier.png" height="250px" />
+            <br/>
+            <p style="position:absolute;bottom:0;font-size: 14px">http://www.electronics-tutorials.ws/diode/diode_6.html</p>
+          </section>
+
+          <section>
+            <h2>LED - Light Emmiting Diode</h2>
+            <img src="images/led.jpg" height="300px"/>
+            <p>Diode som avgir energi i form av lys</p>
+          </section>
+
+          <section>
+            <h2>LED - polaritet</h2>
+            <img src="images/electronics_led_diagram.png" />
+          </section>
+
+          <section>
+            <h2>IV-kurve for en diode</h2>
+            <img src="images/diode-i-v-ideal.png" height="300px" />
+            <img src="images/diode-i-v-real.png" width="300px" />
+            <ul>
+              <li>IV kurve - viser strøm som funksjon av spenning</li>
+              <li>\(V_{f}\) (forward voltage): minimum spenning over dioden før den begynner å lede strøm</li>
+            </ul>
+            <br/><br/>
+            <p style="position:absolute;bottom:0;font-size: 14px">https://learn.sparkfun.com/tutorials/diodes</p>
+          </section>
+
+          <section>
+            <h2>\(V_{f}\) - forward voltage</h2>
+            <img src="images/led-i-v-characteristics.jpg" />
+          </section>
+
+          <section>
+            <h2>Hva vil skje?</h2>
+            <img src="images/led_circuit.png" />
+            <p style="float:right">\(I = \frac{U}{R} = ???\)</p>
+          </section>
+
+          <section>
+            <h2>Løsning - strømbegrensende motstand</h2>
+            <img style="float:left" src="images/led_circuit_resistor.png" />
+            <br/>
+            <div style="float:right;font-size: 24px">
+              <p style="text-decoration: underline">Example:</p>
+              <p>\( V_{cc} = 9 V \)</p>
+              <p>\( V_{f} = 2 V \)</p>
+              <p>\( i = 20 mA \)</p>
+              <p>\( R_{1} = \frac{V_{cc}-V_{f}}{i} = \frac{9V-2V}{20mA} = 350 \Omega \)</p>
+            </div>
+          </section>
         </section>
 
         <section>
-         <section>
-           <h2>Hva er en Arduino?</h2>
-           <img src="images/arduino.jpg" height="200px" />
-         </section>
+          <section>
+            <h2>Hvordan ødelegge en arduino?</h2>
+            <ul>
+              <li>For høy spenning</li>
+              <li>For høy strøm</li>
+              <li>Reverse polarity - strøm i feil retning</li>
+              <li>Statisk elektrisitet</li>
+            </ul>
+          </section>
 
-         <section>
-           <img src="images/opensourcehw.png" height="200px" style="float-left"/>
-           <h3>Arduino</h3>
-           <ul>
-             <li>Open source hardware</li>
-             <li>Microcontroller</li>
-             <li>Arduino Programming Language</li>
-           </ul>
-         </section>
+          <section>
+            <h2>Hvordan ødelegge en arduino?</h2>
+            <ul>
+              <li class="fragment">Trekke for mye strøm gjennom en I/O pinne (inn eller ut) - >20mA per pinne</li>
+              <li class="fragment">Kortslutte 5V/3.3V pinner til jord (eller til en annen pinne i "low" state)</li>
+              <li class="fragment">Kortslutte output pinner til jord (eller til en annen pinne i "low" state)</li>
+            </ul>
+          </section>
 
-         <section data-background="images/arduino_schematic.png">
-           <h2 style="color:black" >Kan vi forstå hvordan dette virker???</h2>
-         </section>
-       </section>
 
-       <section>
-         <section>
-           <h2>Elektronikk innføring</h2>
-           <ul>
-             <li>Komponenter</li>
-             <li>Kretssymboler</li>
-             <li>Enkle kretser</li>
-             <li>Hvordan ødelegge en Arduino?</li>
-           </ul>
-         </section>
+          <section>
+            <h2>Hvordan ødelegge en arduino?</h2>
+            <ul>
+              <li class="fragment">For høy spenning (\(V_{cc}\) eller I/O pinner)</li>
+              <li class="fragment">Feil polaritet på \(V_{cc}\)</li>
+              <li class="fragment">For mye total strøm ut fra \(V_{cc}\) eller inn gjennom GND (>200mA / pinne)</li>
+              <li class="fragment">Forsyne strøm gjennom 5V eller 3.3V samtidig som man trekker strøm fra \(V_{in}\) (skal være motsatt)</li>
+            </ul>
+          </section>
 
-         <section>
-           <h2>Motstand / Resistor</h2>
-           <img src="images/motstand.jpg" height="200px" />
-           <img src="images/resistor_symbols.jpg" />
-         </section>
-
-         <section>
-           <h2 style="float:left">Motstand</h2>
-           <img style="float:right" src="images/resistor_symbols.png" width="500px"/>
-           <br/><br/><br/>
-           <p style="float:left">Enhet: Ohm (&Omega;)</p>
-           <br/><br/>
-           <table width="100%">
-             <tr>
-               <td>Ohms lov</td>
-               <td>Effect</td>
-             </tr>
-             <tr>
-               <td>\begin{align}U = I\cdot R \end{align}</td>
-               <td>\begin{align}P = U \cdot I \end{align}</td>
-             </tr>
-             <tr>
-               <td>\begin{align}I = \frac{U}{R}\end{align}</td>
-               <td>\begin{align}= \frac{U^{2}}{R}\end{align}</td>
-             </tr>
-             <tr>
-               <td>\begin{align}R = \frac{U}{I}\end{align}</td>
-               <td>\begin{align} = I^{2} \cdot R \end{align}</td>
-             </tr>
-           </table>
-         </section>
-       </section>
+          <section>
+            <ol>
+              <li>Trekk ut kontakten til arduinoen!</li>
+              <li>Koble opp kretsen</li>
+              <li>Sjekk alt og dobbeltsjekk!</li>
+              <li>Sett inn "kontakten" (koble til strøm)</li>
+              <li>Det virker!</li>
+            </ol>
+          </section>
+        </section>
       </div>
     </div>
 
